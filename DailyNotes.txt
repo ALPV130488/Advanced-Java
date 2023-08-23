@@ -1,0 +1,151 @@
+0,1-binary-->ASCII,UNICODE
+
+							Computer lang
+						
+						programming lang			scripting lang
+						
+	pl:-used to create sofware
+	sl:-used to create webpages
+	
+					programming lang
+				
+				pop				oop
+			(procedure o.pl)	(oriented o.p)
+			
+								java,c++,
+	
+	java :- oops 		oopl
+			
+			
+			performance:-inheritance;polymorphism			(reuse )
+			security:-abstraction;encapsulation				
+			
+			
+			java:-
+			
+		garbage collector
+		
+		platform independency
+		
+					history:-
+					
+		green team -------green talk(.gt)----oak-------java(jdk 1.0)
+	
+			jdk20
+			
+			
+			3 edt:-
+			
+			jse/j2se:-standlone(ex:-calculator)
+			
+			jee/j2ee:-enterprise/web application/distributed
+			
+			jme/j2me:-mobile
+			
+			
+			Example.java-----compiler---->Example.class-----exection ------>o/p
+			
+			
+			Assembley----------->assembler
+			
+			$ADD ------------>Low level 
+			
+			
+			high level lang:-
+			
+			compiler 
+			
+			interpreter
+			
+		
+			source code---------->machine code(.x)-------->o/p
+			
+			windows:-10- 1010
+			mac:- 10- 1111
+			
+			
+			source ----------->interpretation (line by line )----->o/p
+			
+			
+			
+			java -------->byte code(.class)
+			
+			
+			variables:-2 types:-		dt varname;//declaration 
+			
+										varname=value;//instialization
+										
+								dt varname=value;//var creation
+			
+			(1)local varia			(2)gloabl var
+								
+								static 				instance
+								
+								
+	syntax:-		
+				static:-	static int varname= value;
+				instance:-	dt varname=value;// instance var creation	
+								
+	
+	memory:-
+	
+			static:-it will gets the memory space only once when the class loads into the jvm.
+			
+			instance:-it will gets the memory space for every object creation.
+			
+	calling:-
+	
+			static props:-class refrence
+			instance props:-obj refrence
+			
+			create creation:-
+			
+			classname obj name = new classname(); //obj creation
+			
+			
+			
+	where to use:-	
+
+			static :-common data
+			
+			instance:-unique things
+			
+			
+			OPERANDS :-		a+b
+			
+			int x=5;
+			
+			x =++x;===>x=x+1
+			
+			
+			
+			U-		--,++,
+			
+			L-		&,|
+			
+			T-		(1==3)?true:false;
+			
+			R-		<,>
+			
+			A-		=
+			
+			A-		+
+			
+			B-	
+			
+		IDE Shortcuts:-	
+			
+		suggestions:-ctrl+space
+		
+		comments:-ctrl+/
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
