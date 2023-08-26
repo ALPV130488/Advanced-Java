@@ -111,6 +111,11 @@
 			instance:-unique things
 			
 			
+		* for every java class the default package is java.lang	
+			
+			
+			
+			
 			OPERANDS :-		a+b
 			
 			int x=5;
@@ -138,6 +143,160 @@
 		suggestions:-ctrl+space
 		
 		comments:-ctrl+/
+			
+			
+			
+			
+				signature/syntax:-
+			
+						accesmodifier	retuntype	methodname()
+											{
+											//implementation
+											
+											return;
+											}
+											
+					2 types:-(1)static method
+							(2) instance method
+							
+					
+					oops:-
+					
+					Inheritance:-Accquiring parent cls prop's to child cls.
+					
+			
+			extends 									implements
+		cls------>cls
+														interface---->interface
+		interface---->interface
+														cls----->interface
+							
+				calss A{
+				
+				//100 met's
+				}	
+
+					class B extends A{
+					
+					//20 ================>100+20
+					
+					}
+					
+
+						INTERFACE A 									
+							{
+											
+							P V ADD(int a,int b){
+							syso(a+b)
+							
+							}
+							}
+			
+			
+			interface A1{
+			
+			p v add(int a,int b){
+			
+			
+			syso(a-b)
+			}
+			
+			
+			}
+			child extends A,B
+			
+			
+			*For every java file Object cls is the parent .
+			
+			#MI:- is not supported in java @cls level
+			#it's supported @ interface level
+			
+			
+			
+			2 types method :-based on met's implementation/body.
+			
+			(1)abstract met		:- if the met is not having any implementation		
+
+				syntax:- a.m  retuntype metname();
+				
+							a.m abstract retuntype metname(){}
+			
+			(2)concreate met	:-if the met is having some implementation
+			
+			
+			
+			class:-collection of only concrete met's.
+			
+			abstract cls:- abstract met's+concrete met'scripting
+			
+			interface :-collection of only abstract met's.
+			
+			
+			
+			Abstraction:-
+			
+			interface:-collection of only abstract met's.
+			
+			
+			Polymorhism:-
+			
+			(1)MethodOverloading:-same met name but diff in the parameters
+			
+									(1)No:of parameters
+									(2)order of parameters
+									(3)type of parameters
+			
+			
+			
+			(2)MethodOverriding:-same met name but diff in the met implementation
+			
+			class A{
+			
+			marriage()
+			{
+			//unknown girl
+			}
+			
+			10cr(){
+			}
+			
+			}
+			
+			class B extends A{
+			@Override
+			marriage()
+			{
+			//kajol
+			}
+			
+			10cr(){
+			}
+			
+			}
+			
+			
+			}
+			
+			Encapsulation:-Warpping up of all the similar data in a single entity/class. 
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			
 			
