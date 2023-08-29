@@ -14,16 +14,9 @@ actual hours are.  Test this program to calculate the pay of workers.
 surfaceArea (). Then create subclasses like Cylinder, Sphere, and Cubeetc and implement 
 these methods.
 
-
-(4)Create a class called Worker. Write classes DailyWorker and SalariedWorker that inherit from
-Worker.Every worker has a name and a salary rate. Write method Pay (int hours) to compute 
-the week pay of every worker.  A Daily worker is paid on the basis of the number of days 
-she/he works.The salaried worker gets paid the wage for 40 hours a week no matter what the
-actual hours are.  Test this program to calculate the pay of workers. 
-
 		
 
-(5)Exercise:Create two interfaces namely Drawable and Fillable. Create class called Line, Circle, Square and
+(4)Exercise:Create two interfaces namely Drawable and Fillable. Create class called Line, Circle, Square and
 implement following methods through interface.
 
 <I>Drawable ------ area()
