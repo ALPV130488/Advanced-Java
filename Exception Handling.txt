@@ -98,10 +98,6 @@ We have 3 types of exceptions
 	
 	
 	
-	class A
-	{
-	//10000
-	}
 	
 	
 	
@@ -190,110 +186,21 @@ We have 3 types of exceptions
 	
 	throw new ArithematicException("my own exception");
 	
-POSSIBLE COMBINATIONS:
---------- -------------
-
-try
-{
-int a=10/0;
-}
-catch(Exception e){
-sop("2");
-}
-catch(ArthimeticException ae){
-sop("1");
-}
-catch(ArrayIndexOutOfBoundsException e){
-sop("3");
-}
-
-
-finally
-{
-
-}
-
-	
-	
-	String name="BVRIT";
-	String name1=new String("BVRIT");
-	
-	sop(name.equals(name1));//true
-	sop(name==name1);//false
-	
-	StringBuffer name2=new StringBuffer("BVRIT");
-	StringBuffer name3=new StringBuffer("BVRIT");
-	
-	sop(name2.equals(name3));//false
-	sop(name2==name3);//false
-	
-	
-	
-	
-	
-	
-	
-	
-	class InvalidCredentials extends Throwable/Exception/RunTimeException
-	
-	param-constrcutor
-	
-	
-	
-	throw and throws
-	
-	
-	throw throws 
-	
-	
-	ArithematicException 
-
-		a+b>100
 
 
 
-throw new ArithematicException("addition is wrong/.............")
+
 
 	
-	user defined  empidnotfoundexception agevali.....
-	
-	class EmpIdNotFoundException extends Exception
-	{
-	
-	
-	EmpIdNotFoundException(String message)
-	{
+
 	
 	
 	
-	}
 	
 	
 	
-	}
-	
-	throw                 throws 
 	
 	
-	
-	user defined 
-	
-	1)the exception class should be child class of Exception
-	
-	2)we need to take param constrcutor
-	
-	
-	use it throw 
-	
-	class InvalidCredetialsException  extends Throwable/RunTimException/Exception
-	{
-	
-	InvalidCredetialsException(String message)
-	{
-	super(message)
-	}
-	
-	}
 	
 	
 	
