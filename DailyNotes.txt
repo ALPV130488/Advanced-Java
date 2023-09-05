@@ -225,17 +225,19 @@
 			
 			
 			
-			class:-collection of only concrete met's.
+			class:-collection of only concrete met's.`			(0%)
 			
-			abstract cls:- abstract met's+concrete met'scripting
+			abstract cls:- abstract met's+concrete met'scripting		(0%-100%)
 			
-			interface :-collection of only abstract met's.
+			interface :-collection of only abstract met's.					(100%)
 			
 			
 			
 			Abstraction:-
 			
 			interface:-collection of only abstract met's.
+			
+			
 			
 			
 			Polymorhism:-
@@ -278,6 +280,237 @@
 			}
 			
 			Encapsulation:-Warpping up of all the similar data in a single entity/class. 
+			
+			
+			
+			Constructor:-initialize the obj
+			
+			
+			class A-
+		
+		
+				obj
+				
+					A obj = new A();
+			
+			
+			2 types:-- (1)default constr			a.m classname(){
+														}
+					(2)Parametrized constr			a.m classname(params...){
+														}
+			
+			
+			access modifiers:-to resist
+			
+						class props:- var,met's,constr
+			
+			
+			(1)public
+			(2)private
+			(3)protected
+			(4)default
+			
+			
+			
+			
+			Naming Conventions:--
+			
+			
+			packages:--	
+			(1)packages names must be in smaller case
+			(2)compressed name
+			
+			classes:-
+			(1)starting letter must be in uppercase
+			
+			methods:-
+			(1)Camel case :- toString();
+			
+			static final:-
+			
+			(1)Capital words.
+			
+			
+			Wrapper classes:-
+			
+			
+			Interger obj =-
+			
+			
+			
+			
+			
+			
+			
+			final:- var:- value can't be changed if we declare at once
+					met:-we can't override the met if declare final keyword at the met signature
+			
+			
+			super:-To use Parent cls prop's  into the child class
+			
+			
+			this:-to use the current clss prop's
+			
+			userdefinedexceptions:-we need to make it as a child clss for the Exception class
+			
+			
+			Arrays:-
+			
+			3 methods:-
+			
+			(1)int[] arrname =  new int[limit of array];
+				int arrname[] =  new int[limit of array];
+				int []arrname =  new int[limit of array];
+			
+			
+			(2)int[] arrname= new int[]{1,2,3,4,4,5}
+			
+			(3)int[] arrname ={12,34,45,56}
+			
+			limitations:-
+			-->length of an array we need mention in prior,it's fixed in size once declared
+			-->homogenous 
+			-->utility methods
+			
+			
+			Collections framework:-
+			
+			
+			10:-default size
+			
+			
+			lang:-Comparbale:-compareTo()=>
+			
+			util:-Comparator:-compare(NSO)
+			
+			
+			
+			String:-
+
+					String(Immutable)		StringBuffer(Mutable) (Sync) 		StringBuilder(Mutable)(not-synco)
+	
+			multitasking(multithreading)
+			
+			we loss some data
+			
+			save the time 
+			
+			task:-
+			
+			time taking process
+			
+			data security
+			
+			
+			File Handling :- io
+			
+					1.create file   - File
+					
+					2.write into file  -FileWriter
+										BufferedWriter
+										PrintWriter
+					
+					3.read from file	-FileReader
+										BufferedReader
+										
+		io packges:-	
+
+				write:-(1)FileOutStream
+						(2)BufferedOutputStream
+						
+				read:-(1)FileInputStream
+						(2)BufferedInputStream
+										
+										
+										
+										
+										
+										
+										
+										
+										
+			Serialization:-To transfer object related data to normal data.
+			
+			
+			deserialization :-to convert normal data to object data.
+										
+			
+										stream
+										
+							byteStream				charStream			
+			
+			
+			
+			
+			age calculator
+			
+			
+			util.Date
+			
+			Date
+			
+			
+			
+			data:-Raw info of any real world entities.
+			
+			database:-To store the data in an organized way for security,future access.....
+			
+			
+														
+
+									
+a		apple				45454
+
+
+b		cat					45849							
+			
+											
+c		orange				48556
+			
+																			
+			
+			rdbms:-		rows(records)+columns(fields)
+			
+			oracle,mysql, db2, postgres ,h2
+			
+			
+											
+			crud:-
+			
+		c	create
+		r	retrive
+		u	update
+		d	delete
+			
+			
+			
+							
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			
 			
