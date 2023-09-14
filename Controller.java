@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.dao.DaoImplementation;
 import com.example.demo.entity.Product;
 import com.example.demo.service.Services;
 
@@ -19,6 +22,9 @@ public class Controller {
 	
 	@Autowired
 	Services service;
+	
+	
+	
 	@PostMapping("/addproduct")//http//localhost:1010/product/addproduct
 	public String addProduct(@RequestBody Product product)
 	{
@@ -31,15 +37,27 @@ public class Controller {
 		return service.updateProdcut(product);
 	}
 	
-	@DeleteMapping("/deleteproduct/{pid}")
-	public String deleteProduct(@PathVariable("pid") int productId)
+	@DeleteMapping("/deleteproduct/{pname}")
+	public String deleteProduct(@PathVariable("pname") String productName)
 	{
-		return service.deleteProduct(productId);
+		return service.deleteProduct(productName);
 	}
 	
-	@GetMapping("/getprodcut/{pid}")
-	public Product getProduct(@PathVariable("pname") int productId)
+	@GetMapping("/getprodcut/{pname}")
+	public Product getProduct(@PathVariable("pname") String productName)
 	{
-		return service.getProduct(productId);
+		return service.getProduct(productName);
+	}
+	
+	@GetMapping("/getallproducts")
+	public List<Product> getAllProducts(){
+		
+		return service.getAllProducts();
+	}
+	
+	@GetMapping("/getproinbetween/{min}/{max}")
+	public List<Product> getAllProductsInBetween(@PathVariable("min") int minprice,@PathVariable("max") int maxprice){
+		
+		return service.getAllProductsInBetween(minprice, maxprice);
 	}
 }
