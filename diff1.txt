@@ -1,0 +1,198 @@
+Java Web Services – SOAP vs REST
+Posted by	SmlCodes
+By using web services we can communicate different applications on different platforms. For example java application in Windows platform can easily communicate with the application developed using .net/php in Linux operation system.
+
+ 
+
+Web Services are mainly of 2 types,
+
+SOAP [Simple Object Access Protocol]
+REST [Representational state transfer]
+ 
+
+1.SOAP [Simple Object Access Protocol]
+SOAP stands for Simple Object Access Protocol. SOAP is an XML based industry standard protocol for designing and developing web services. Since it’s XML based, its platform and language independent. So our server can be based on JAVA and client can be on .NET, PHP etc. and vice versa. SOAP gives the output only in XML format
+
+We have following API’s to implement SOAP Webservices in our java applications
+
+JAX-WS
+Apache Axis2
+ 
+
+2.REST [Representational state transfer]
+Whatever the data/response we will get from the server is known as Resource. Each resource can be accessed by its URI’s.  We can get the resource from RESTful service in different formats like, HTML,XML,JSON,TEXT,PDF and in the Image formats as well, but in real time we mainly we will prefer JSON.
+
+ 
+
+REST guidelines always talks about stateless communication between client and the Server.  Stateless means, every single request from client to server will be considered as a fresh request. Because of this reason REST always prefers to choose HTTP as it a stateless protocol
+
+ 
+
+We have following API’s to implement RESTful Webservices in our java applications
+
+JAX-RS
+Apache CXF provides implementation for SOAP and RESTful services both.
+REST is a style of software architecture. RESTful is typically used to refer to web services implementing such an architecture
+
+ 
+
+No.         	SOAP													                  	REST
+1)	SOAP is a protocol.								                         REST is an architectural style.
+2)	SOAP stands for Simple Object Access Protocol.        		             REST stands for Representational State Transfer.
+3)	SOAP can’t use REST because it is a protocol.	                         REST can use SOAP web services because it is a concept and can use any protocol like HTTP, SOAP.
+4)	SOAP uses services interfaces to expose the business logic.	             REST uses URI to expose business logic.
+5)	JAX-WS is the java API for SOAP web services.	                         JAX-RS is the java AP liI for RESTful web services.
+6)	SOAP defines standards to be strictly followed.                          REST does not define too much standardske SOAP.
+7)	SOAP requires more bandwidth and resource than REST.                     REST requires less bandwidth and resource than SOAP.
+8)	SOAP defines its own security.	                                         RESTful web services inherits security measures from the underlying transport.
+9)	SOAP permits XML data format only.	                                     REST permits different data format such as Plain text, HTML, XML, JSON etc.
+10)	SOAP is less preferred than REST.	                                     REST more preferred than SOAP.
+ 
+
+ 
+
+1.1 SOAP [Simple Object Access Protocol
+Simple Object Access Protocol (SOAP) is a standard protocol specification for message exchange based on XML. Communication between the web service and client happens using XML messages.
+
+A simple web service architecture have two components
+
+Client
+Service provider
+ 
+
+To communicate client with service provider client must know about following things
+
+Location of web services server
+Functions available, signature and return types of function.
+Communication protocol
+Input output formats
+ 
+
+Service provider will create a standard XML file which will have all above information.So if this file is given to client then client will be able to access web service. This XML file is called “WSDL”.
+
+ 
+
+a.WSDL (Web Services Description Language):
+WSDL stands for Web Service Description Language. It is an XML file that describes the technical details of how to implement a web service, more specifically the URI, port, method names, arguments, and data types. Since WSDL is XML, it is both human-readable and machine-consumable, which aids in the ability to call and bind to services dynamically. Using this WSDL file we can understand things like,
+
+Port / Endpoint – URL of the web service
+Input message format
+Output message format
+Security protocol that needs to be followed
+Which protocol the web service uses
+ 
+
+How to access web service:
+There are two ways to access web service
+
+If Service provider knows client
+If Service provider register its WSDL to UDDI and client can access it from UDDI
+ 
+
+1.If Service provider knows client
+
+If Service provider knows client then it will provide its wsdl to client and client will be able to access web service.
+
+
+2.If Service provider register its WSDL to UDDI and client can access it from UDDI
+
+Service provider register its WSDL to UDDI and client can access it from UDDI:UDDI stands for Universal Description, Discovery and Integration. It is a directory service. Web services can register with a UDDI and make themselves available through it for discovery. So following steps are involved.
+
+Service provider registers with UDDI.
+Client searches for service in UDDI.
+UDDI returns all service providers offering that service.
+Client chooses service provider
+UDDI returns WSDL of chosen service provider.
+Using WSDL of service provider, client accesses web service
+ 
+
+b.UDDI:
+UDDI is an XML-based standard for describing, publishing, and finding web services.
+UDDI is a specification for a distributed registry of web services
+A business or a company can register three types of information into a UDDI registry. This information is contained in three elements of UDDI.
+
+These three elements are:
+
+White Pages : Basic information about the company and its business
+Yellow Pages: contain more details about the company
+Green Pages: contains technical information about a web service(url locations etc)
+Now SOAP uses without WSDL and UDDI. Instead of the discovery process described in the History of the Web Services Specification section below, SOAP messages are hard-coded or generated without the use of a repository. The interaction is illustrated in the figure below. More on SOAP.
+
+ 
+
+ 
+
+1.2 REST [Representation State Transfer]
+REpresentational State Transfer (REST) is  a stateless client-server architecture in which the web services are viewed as resources and can be identified by their URIs.Web service clients that want to use these resources access via globally defined set of remote methods that describe the action to be performed on the resource.
+
+It consists of two components
+
+REST server: which provides access to the resources
+REST client : which accesses and modify the REST resources.
+In the REST architecture style, clients and servers exchange result representations of resources by using a standardized interface and protocol.REST isn’t protocol specific, but when people talk about REST they usually mean REST over HTTP.
+
+The response from server is considered as the result representation of the resources. This result representation can be generated from one resource or more number of resources. REST allows that resources have different result representations, e.g.xml, json etc. The rest client can ask for specific result representation via the HTTP protocol
+
+HTTP methods:
+RESTful web services use HTTP protocol methods for the operations they perform.
+
+Methods are:
+
+GET:It defines a reading access of the resource without side-effects. This operation is idempotent i.e. They can be applied multiple times without changing the result
+PUT: It is generally used for updating resource. It must also be idempotent.
+DELETE: It removes the resources. The operations are idempotent i.e. they can get repeated without leading to different results.
+POST: It is used for creating a new resource. It is not idempotent.
+ 
+
+Idempotent
+Idempotent means result of multiple successful request will not change state of resource after initial application
+
+For example:
+
+GET is idempotent. If Delete() is idempotent method because when you first time use delete, it will delete the resource (initial application) but after that, all other request will have no result because resource is already deleted.
+
+Post is not idempotent method because when you use post to create resource, it will keep creating resource for each new request, so result of multiple successful request will not be same.
+
+ 
+
+Some important features of Restful web services are:
+
+1.Resource identification through URI: Resources are identified by their URIs (typically links on internet). So, a client can directly access a RESTful Web Services using the URIs of the resources (same as you put a website address in the browser’s address bar and get some representation as response).
+
+2.Uniform interface: Resources are manipulated using a fixed set of four create, read, update, delete operations: PUT, GET, POST, and DELETE.
+
+3.Client-Server: A clear separation concerns is the reason behind this constraint. Separating concerns between the Client and Server helps improve portability in the Client and Scalability of the server components.
+
+4.Stateless: each request from client to server must contain all the information necessary to understand the request, and cannot take advantage of any stored context on the server.
+
+5.Cache: to improve network efficiency responses must be capable of being labeled as cacheable or non-cacheable.
+
+6.Named resources – the system is comprised of resources which are named using a URL.
+
+7.Interconnected resource representations – the representations of the resources are interconnected using URLs, thereby enabling a client to progress from one state to another.
+
+8.Layered components – intermediaries, such as proxy servers, cache servers, gateways, etc, can be inserted between clients and resources to support performance, security, etc.
+
+9.Self-descriptive messages: Resources are decoupled from their representation so that their content can be accessed in a variety of formats, such as HTML, XML, plain text, PDF, JPEG, JSON, and others
+
+ 
+
+ 
+
+1.3 Java Web Services API
+Java web services tutorial provides concepts and examples of two main java web services api: JAX-WS and JAX-RS. The java web service application can be accessed by other programming languages such as .Net and PHP.
+
+Java web service application perform communication through WSDL (Web Services Description Language). There are two ways to write java web service application code: SOAP and RESTful.
+
+ 
+
+There are two main API’s defined by Java for developing web service applications since JavaEE 6.
+
+JAX-WS: for SOAP web services. The are 2 ways to write JAX-WS application code: by
+RPC style
+Document style
+ 
+
+JAX-RS: for RESTful web services. There are mainly 2 implementation currently in use for creating JAX-RS application:
+Jersey
+RESTeasy.
