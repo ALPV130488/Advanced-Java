@@ -1,0 +1,8 @@
+0    [main] DEBUG Admin.class  - Debug Message
+1    [main] INFO  Admin.class  - info Message
+1    [main] WARN  Admin.class  - warn Message
+1    [main] FATAL Admin.class  - fatal Message
+3    [main] DEBUG Report.class  - Debug Message
+3    [main] INFO  Report.class  - info Message
+3    [main] WARN  Report.class  - warn Message
+3    [main] FATAL Report.class  - fatal Message

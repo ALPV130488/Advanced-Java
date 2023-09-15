@@ -1,0 +1,4 @@
+0    [main] DEBUG LoggingExample.class  - Debug Message
+2    [main] INFO  LoggingExample.class  - info Message
+2    [main] WARN  LoggingExample.class  - warn Message
+2    [main] FATAL LoggingExample.class  - fatal Message
